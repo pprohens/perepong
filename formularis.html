@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularis</title>
+</head>
+
+<body>
+    <h1>Formularis HTML</h1>
+
+    <form action="https://httpbin.org/get">
+
+        <div>
+            <label for="correu">Correu electrònic:</label>
+            <input type="email" name="correu" id="correu">
+        </div>
+
+        <div>
+            <label for="nom">Nombre:</label>
+            <input type="text" name="nom" id="nom" maxlength="10">
+        </div>
+
+        <div>
+            <label for="llinatges">Llinatges:</label>
+            <input type="text" name="llinatges" id="llinatges">
+        </div>
+
+        <div>
+            <label for="poblacio">Població:</label>
+            <input type="text" name="poblacio" id="poblacio" value="Manacor">
+        </div>
+
+        <div>
+            <label for="naixement">Data naixement:</label>
+            <input type="date" name="naixement" id="naixement">
+        </div>
+
+        <div>
+            <label for="numCamisetes">Número camisetes:</label>
+            <input type="number" name="numCamisetes" id="numCamisetes" min="1" max="200" step="1">
+        </div>
+
+        <div>
+            <label for="colorPrefe">Color preferit:</label>
+            <input type="color" name="colorPrefe" id="colorPrefe">
+        </div>
+
+        <div>
+            <label for="cansamentAlumne">Nivell de cansament:</label>
+            <input type="range" name="cansamentAlumne" id="cansamentAlumne" min="1" max="1000">
+        </div>
+
+        <div>
+            <p>Seleccions els teus hobbies:</p>
+            
+            <input type="checkbox" name="natacio" id="natacio">
+            <label for="natacio">Natació</label><br>
+            
+            <input type="checkbox" name="gaming" id="gaming" checked>
+            <label for="gaming">Gaming</label><br>
+            
+            <input type="checkbox" name="basket" id="basket">
+            <label for="basket">Basket</label><br>
+        </div>
+
+        <div>
+            <p>Tria el teu estat civil:</p>
+            
+            <input type="radio" name="estat_civil" id="solter" value="S">
+            <label for="solter">Solter</label><br>
+            
+            <input type="radio" name="estat_civil" id="casat" value="C">
+            <label for="casat">Casat</label><br>
+            
+            <input type="radio" name="estat_civil" id="jubilat" value="J">
+            <label for="jubilat">Jubilat</label><br>
+        </div>
+<br>
+        <div>
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais" multiple>
+                <option value="es">España</option>
+                <option value="fr" selected>França</option>
+                <option value="pt">Portugal</option>
+                <option value="ar">Andorra</option>
+            </select>
+        </div>
+<br>
+        <div>
+            <label for="descripcio">Descriu que has fet avui</label>
+            <textarea name="descripcio" id="descripcio"></textarea>
+        </div>
+
+        <br>
+        <button>Enviar dades</button>
+
+    </form>
+
+</body>
+
+</html>
